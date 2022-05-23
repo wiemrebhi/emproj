@@ -1,0 +1,28 @@
+ 
+  .booking-form {
+    width: 41.67%;
+    background: rgba(237, 241, 252, 0.747);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 10%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 0%;
+  }
+  
+  .form-label {
+    color: rgb(0, 0, 0);
+  }
+  
+  .booking-form3 {
+    width: 41.67%;
+    background: rgba(225, 235, 238, 0.747);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-top: 0%;
+  }
+  
