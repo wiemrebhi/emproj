@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+
+  </head>
+
+  <body>
+    <table class="table">
+      <thead class="bg-light text-secondary">
+        <tr>
+          <th>ID Carte</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>Birthday</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Hiring Date</th>
+          <th>Position</th>
+          <th> editing</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {% for employee in employees %}
+        <tr>
+          <td>{{employee.id_carte}}</td>
+          <td>{{employee.name}}</td>
+          <td>{{employee.Surname}}</td>
+          <td>{{employee.birth_date}}</td>
+          <td>{{employee.Email}}</td>
+          <td>{{employee.Phone}}</td>
+          <td>{{employee.hired_on}}</td>
+          <td>{{employee.position}}</td>
+          <td>
+            <button class="btn btn-light" onclick="location.href='/update/{{employee.id_carte}}'">Update</button>
+            <button class="btn btn-primary" onclick="location.href='/deleteEmp/{{employee.id_carte}}'">Delete</button>
+          </td>
+        </tr>
+        {% endfor %}
+     </tbody>
+    </table>
+  </body>
+</html>

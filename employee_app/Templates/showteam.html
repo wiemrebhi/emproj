@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+
+  </head>
+
+  <body>
+    <table class="table">
+      <thead class="bg-light text-secondary">
+        <tr>
+          <th>ID Carte</th>
+          <th>Name</th>
+          <th>Surname</th>
+          <th>E-mail</th>
+          <th>Phone</th>
+          <th>Hiring Date</th>
+          <th>Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for team in teams %}
+        <tr>
+            <td>{{team.employe.id_carte}}</td>
+            <td>{{team.employe.name}}</td>
+            <td>{{team.employe.Surname}}</td>
+            <td>{{team.employe.Email}}</td>
+            <td>{{team.employe.Phone}}</td>
+            <td>{{team.employe.hired_on}}</td>
+            <td>{{team.TEAM}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
