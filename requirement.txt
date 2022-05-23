@@ -1,0 +1,4 @@
+#Python 3.10.4
+# usage: pip install -r requirements.txt 
+Django== 4.0.4
+django-bootstrap-v5 1.0.11
