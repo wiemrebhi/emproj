@@ -7,3 +7,4 @@ The steps needed to run the projec:
 2-pip install django
 3-python manage.py migrate
 4-python manage,py runserver
+jo
